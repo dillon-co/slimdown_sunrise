@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SlimdownSunrise</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <%= yield %>
+
+    <footer class="bg-secondary-darker">
+      <div class="container"><div class="row">
+    			<div class="col-xs-12">
+
+    				<p>Keto-One is committed to maintaining the highest quality products and the utmost integrity in business practices. All products sold on this website are certified by Good Manufacturing Practices (GMP), which is the highest standard of testing in the supplement industry.
+    				Notice: The products and information found on this site are not intended to replace professional medical advice or treatment. These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure or prevent any disease.<br>
+    				* Individual results may vary.<br>
+    				** Information found on this website is based on the studies found here: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2716748/#__sec10title" target="_blank">Clinical Study 1</a>, <a href="https://academic.oup.com/jcem/article/88/4/1617/2845298" target="_blank">Clinical Study 2</a>, <a href="https://academic.oup.com/ajcn/article/87/1/44/4633256" target="_blank">Clinical Study 3</a>.<br>
+    				You should always consult a physician before use or if you have a serious medical condition or use prescription medications. By using this site you agree to follow the Privacy Policy and all Terms &amp; Conditions printed on this site.<br>
+    				All information provided is for informational purposes only and does not imply the referenced sources or publishers of such are endorsing this product.</p>
+    				<p>Keto-One<br>
+    				29805 Electric Drive<br>
+    				Bay Village, OH 44140<br>
+    				NutraSmart LLC is located within the United States of America</p>
+
+
+    				<!-- <a href="https://keto-one.com/terms" target="_blank">Terms</a> -->
+            <%= link_to "Terms", terms_path %>
+             &nbsp;&nbsp;•&nbsp;&nbsp;
+    				<!-- <a href="https://keto-one.com/privacy" target="_blank">Privacy Policy</a> -->
+            <%= link_to "Privacy Policy", privacy_path %>
+    				<!--  <a href="https://keto-one.com/contact" target="_blank">Contact</a> -->
+            &nbsp;&nbsp;•&nbsp;&nbsp;
+            <%= link_to "Contact", contact_path %>
+
+    			</div><!--col-->
+    		</div><!--row-->
+      </div><!--container-->
+    </footer>
+
+    <div id="ajaxloader"></div>
+
+  </body>
+</html>
